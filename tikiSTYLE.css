@@ -18,7 +18,7 @@ html, body{
 /* huvud */
 header{
     margin: 0;
-    background-image: url("palmer2.jpg");
+    background-image: url("palmer3.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center top;
@@ -31,7 +31,7 @@ header{
 header h1{
     font-family:'Amatic SC', cursive; 
     color: white;
-    font-size: 12em;
+    font-size:9em;
     text-align: center;
     text-transform: uppercase;
     margin: 0;
@@ -43,25 +43,28 @@ header h1{
 .menu {
     background-color: #669997;
     margin:0;
-    padding: 1px;
     width: 100%;
-    text-align: center;
     font-family: 'Amatic SC','Josefin Slab', serif;
     font-size: 2em
 }
-.menu ul li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-a{
-    text-decoration: none;
-    color:white;
-    text-transform: uppercase;
-}
-a:focus, a:hover {
-    text-decoration: underline;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 20px;
+  text-decoration: none;
+}
 
 /* innehåll */
 .content {
@@ -71,7 +74,7 @@ a:focus, a:hover {
 h1{
     font-family: 'Josefin Slab', Georgia, serif;
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 2.5em;
     margin-top:20px;
     margin-bottom: 0;
 }
@@ -116,7 +119,9 @@ p{
     }
     td:nth-child(2){
         text-align:right;
-        font-style: italic}
+        font-style: italic
+}
+
 /* icon */
 @media only screen and (max-width: 500px) {
   img.icon {
@@ -124,9 +129,9 @@ p{
   }
 }
 img.icon{
-    float: left;
-    width:150px;
-    margin-top: -150px;
+    float: right;
+    width:130px;
+    margin-top: -135px;
 }
   /* fot */
 footer{
@@ -136,14 +141,20 @@ footer{
     color:#FEEAE4;
     text-align: right
 }
+
 footer ul li{
-    display: inline-block;
-    padding: 0px 20px;
+    float: right;
+    display: block;
+    padding: 20px 20px;
+
 }
 footer a{
+    color: #FEEAE4;
+    text-align: center;
     text-decoration: none;
-    color:#FEEAE4;
     text-transform: uppercase;
+ 
 }
 a:focus, a:hover {
     text-decoration: underline;
+}

@@ -37,7 +37,11 @@ header h1{
     margin: 0;
     padding: 0;
 }
-
+@media screen and (max-width: 600px) {
+  .content h1 {
+    font-size: 30px;
+  }
+}
 
 /* meny */
 .menu {

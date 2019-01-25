@@ -18,20 +18,19 @@ html, body{
 /* huvud */
 header{
     margin: 0;
-    background-image: url("palmer2.jpg");
+    background-image: url("palmer3.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center top;
     background-attachment: fixed;
     padding-top:150px;
     padding-bottom:150px;
-    border-image-width: auto
 
 }
 header h1{
     font-family:'Amatic SC', cursive; 
     color: white;
-    font-size: 12em;
+    font-size: 8em;
     text-align: center;
     text-transform: uppercase;
     margin: 0;
@@ -43,17 +42,23 @@ header h1{
 .menu {
     background-color: #669997;
     margin:0;
-    padding: 1px;
     width: 100%;
-    text-align: center;
     font-family: 'Amatic SC','Josefin Slab', serif;
     font-size: 2em
 }
-.menu ul li{
-    display: inline-block;
-    padding: 0px 20px;
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu li{
+    float: left;
 }
 a{
+    display: block;
+    padding: 0px 10px;
     text-decoration: none;
     color:white;
     text-transform: uppercase;
@@ -71,7 +76,7 @@ a:focus, a:hover {
 h1{
     font-family: 'Josefin Slab', Georgia, serif;
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 2.5em;
     margin-top:20px;
     margin-bottom: 0;
 }
@@ -124,9 +129,10 @@ p{
   }
 }
 img.icon{
-    float: left;
-    width:150px;
-    margin-top: -150px;
+    float: right;
+    width:120px;
+    margin-top: -130px;
+    margin-right: 10px;
 }
   /* fot */
 footer{
@@ -134,16 +140,19 @@ footer{
     border-bottom: 5px solid black;
     background: #4E4E4E;
     color:#FEEAE4;
-    text-align: right
 }
-footer ul li{
-    display: inline-block;
-    padding: 0px 20px;
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+footer li{
+    float: right;
+    padding: 10px 20px;
 }
 footer a{
-    text-decoration: none;
     color:#FEEAE4;
-    text-transform: uppercase;
 }
-a:focus, a:hover {
-    text-decoration: underline;
+
